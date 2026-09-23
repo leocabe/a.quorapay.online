@@ -26,3 +26,12 @@ Com o servidor local ativo, abra `/tests/currency.html`. Os testes usam resposta
 
 
 O contador é mantido durante a sessão e para em zero. O número de visitantes é uma reprodução visual, sem conexão a dados ao vivo.
+
+
+## Oferta de retorno
+
+`oferta.html` contém uma oferta de US$ 9 (convertida automaticamente), no estilo visual da página principal. O link fica em `assets/offer-config.js`. **A pedido do proprietário, usa provisoriamente o checkout de US$ 15. Substituir pela oferta de US$ 9 antes de publicar.**
+
+`assets/backredirect.js` prepara uma única entrada no histórico depois da primeira interação. Ao voltar para essa entrada, abre `oferta.html` uma vez por sessão. As saídas seguintes não são interceptadas. Sem armazenamento de sessão, o redirecionamento não é ativado. Sem JavaScript, os preços-base aparecem em dólares.
+
+Não foi criado um depoimento ou antes/depois fictício como se fosse real. A imagem enviada menciona seis semanas, e não sustenta uma alegação de quatro quilos em sete dias. A página agora usa a peça fornecida pelo proprietário como imagem central, com identificação visível de ilustração publicitária e de depoimento/resultados não verificados. Prova social autêntica depende de fotos e relato reais da cliente.

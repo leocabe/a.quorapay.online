@@ -31,7 +31,8 @@
     // Sum the displayed bonus amounts, including currencies without decimal places.
     const bonusTotal = [...document.querySelectorAll('.bono-precio-tachado[data-usd]')]
       .reduce((sum, el) => sum + Math.round(converted(el.dataset.usd) * factor), 0) / factor;
-    document.querySelector('[data-bonus-total]').textContent = formatter.format(bonusTotal);
+    const total = document.querySelector('[data-bonus-total]');
+    if (total) total.textContent = formatter.format(bonusTotal);
     document.documentElement.dataset.displayCurrency = currency;
   }
 
