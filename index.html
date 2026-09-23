@@ -1,63 +1,2934 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scorpio Telecoms | Modern Connectivity</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <script>
-    window.tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#10b981",
-            "primary-hover": "#059669",
-            "border-light": "#f1f5f9",
-            "text-muted": "#64748b",
-          },
-          fontFamily: {
-            "sans": ["Inter", "sans-serif"]
-          },
-        },
-      },
-    }
-  </script>
-  <style type="text/css">
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    html { scroll-behavior: smooth; }
-    
-    .card-pattern {
-      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAFwajcFmH4vW2K43G-5V9pWLwKgWEtUyWPEw16enbjsqvoVK0PINf69huYTayZY7Nf4WS1iUgDj_K27kcpxaRHlgzpFfJMq0Qk8WJCUXiKKkZqnnJ7slrSl1UfxJJb4j6lhS7AjgQWa4XJkQm7aYzWqqYiaa0Uoh3Re_or85N8hPWRoaQII-b7g6iWIOBgy-MKf1B0iC_nGp7o1tkwZvW0ULH-_dAqguuldKy32AFMfpnicS4eg8mBGFf_5X1xGhnXi9oRNeniHMpr);
-      background-size: 100px;
-    }
-    
-    .lifestyle-overlay {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.95) 40%, rgba(255, 255, 255, 0) 100%);
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  document.documentElement.classList.add('prices-pending');
+  window.alivioPriceTimeout = setTimeout(function () {
+    document.documentElement.classList.remove('prices-pending');
+  }, 8500);
+</script>
+<link rel="preconnect" href="https://api.country.is">
+<link rel="preconnect" href="https://ipapi.co">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<title>Alivio En Cada Plato</title>
+<meta name="description" content="Más de 500 recetas sin gluten y sin azúcar. Alivio en Cada Plato, con planificación, ideas prácticas y 11 bonos de regalo.">
+<style data-shopify>
+      @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/f6a5dba2-assistant_n4.9120912a469cad1cc292572851508ca49d12e768.woff2") format("woff2"),
+       url("assets/4e3407b4-assistant_n4.6e9875ce64e0fefcd3f4446b7ec9036b3ddd2985.woff") format("woff");
+}
 
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 20;
-      vertical-align: middle;
-    }
-  </style>
+      @font-face {
+  font-family: Assistant;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/44a5f770-assistant_n7.bf44452348ec8b8efa3aa3068825305886b1c83c.woff2") format("woff2"),
+       url("assets/658175ef-assistant_n7.0c887fee83f6b3bda822f1150b912c72da0f7b64.woff") format("woff");
+}
 
-<link rel="stylesheet" href="/index.css">
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+      
+      
+      @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/f6a5dba2-assistant_n4.9120912a469cad1cc292572851508ca49d12e768.woff2") format("woff2"),
+       url("assets/4e3407b4-assistant_n4.6e9875ce64e0fefcd3f4446b7ec9036b3ddd2985.woff") format("woff");
+}
+
+
+      
+        :root,
+        .color-scheme-1 {
+          --color-background: 255,255,255;
+        
+          --gradient-background: #ffffff;
+        
+
+        
+
+        --color-foreground: 18,18,18;
+        --color-background-contrast: 191,191,191;
+        --color-shadow: 18,18,18;
+        --color-button: 61,152,46;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 255,255,255;
+        --color-secondary-button-text: 18,18,18;
+        --color-link: 18,18,18;
+        --color-badge-foreground: 18,18,18;
+        --color-badge-background: 255,255,255;
+        --color-badge-border: 18,18,18;
+        --payment-terms-background-color: rgb(255 255 255);
+      }
+      
+        
+        .color-scheme-2 {
+          --color-background: 243,243,243;
+        
+          --gradient-background: #f3f3f3;
+        
+
+        
+
+        --color-foreground: 18,18,18;
+        --color-background-contrast: 179,179,179;
+        --color-shadow: 18,18,18;
+        --color-button: 18,18,18;
+        --color-button-text: 243,243,243;
+        --color-secondary-button: 243,243,243;
+        --color-secondary-button-text: 18,18,18;
+        --color-link: 18,18,18;
+        --color-badge-foreground: 18,18,18;
+        --color-badge-background: 243,243,243;
+        --color-badge-border: 18,18,18;
+        --payment-terms-background-color: rgb(243 243 243);
+      }
+      
+        
+        .color-scheme-3 {
+          --color-background: 36,40,51;
+        
+          --gradient-background: #242833;
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 47,52,66;
+        --color-shadow: 18,18,18;
+        --color-button: 255,255,255;
+        --color-button-text: 0,0,0;
+        --color-secondary-button: 36,40,51;
+        --color-secondary-button-text: 255,255,255;
+        --color-link: 255,255,255;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 36,40,51;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(36 40 51);
+      }
+      
+        
+        .color-scheme-4 {
+          --color-background: 18,18,18;
+        
+          --gradient-background: #121212;
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 146,146,146;
+        --color-shadow: 18,18,18;
+        --color-button: 255,255,255;
+        --color-button-text: 18,18,18;
+        --color-secondary-button: 18,18,18;
+        --color-secondary-button-text: 255,255,255;
+        --color-link: 255,255,255;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 18,18,18;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(18 18 18);
+      }
+      
+        
+        .color-scheme-5 {
+          --color-background: 51,79,180;
+        
+          --gradient-background: #334fb4;
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 23,35,81;
+        --color-shadow: 18,18,18;
+        --color-button: 255,255,255;
+        --color-button-text: 51,79,180;
+        --color-secondary-button: 51,79,180;
+        --color-secondary-button-text: 255,255,255;
+        --color-link: 255,255,255;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 51,79,180;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(51 79 180);
+      }
+      
+
+      body, .color-scheme-1, .color-scheme-2, .color-scheme-3, .color-scheme-4, .color-scheme-5 {
+        color: rgba(var(--color-foreground), 0.75);
+        background-color: rgb(var(--color-background));
+      }
+
+      :root {
+        --font-body-family: Assistant, sans-serif;
+        --font-body-style: normal;
+        --font-body-weight: 400;
+        --font-body-weight-bold: 700;
+
+        --font-heading-family: Assistant, sans-serif;
+        --font-heading-style: normal;
+        --font-heading-weight: 400;
+
+        --font-body-scale: 1.0;
+        --font-heading-scale: 1.0;
+
+        --media-padding: px;
+        --media-border-opacity: 0.05;
+        --media-border-width: 1px;
+        --media-radius: 0px;
+        --media-shadow-opacity: 0.0;
+        --media-shadow-horizontal-offset: 0px;
+        --media-shadow-vertical-offset: 4px;
+        --media-shadow-blur-radius: 5px;
+        --media-shadow-visible: 0;
+
+        --page-width: 120rem;
+        --page-width-margin: 0rem;
+
+        --product-card-image-padding: 0.0rem;
+        --product-card-corner-radius: 0.0rem;
+        --product-card-text-alignment: left;
+        --product-card-border-width: 0.0rem;
+        --product-card-border-opacity: 0.1;
+        --product-card-shadow-opacity: 0.0;
+        --product-card-shadow-visible: 0;
+        --product-card-shadow-horizontal-offset: 0.0rem;
+        --product-card-shadow-vertical-offset: 0.4rem;
+        --product-card-shadow-blur-radius: 0.5rem;
+
+        --collection-card-image-padding: 0.0rem;
+        --collection-card-corner-radius: 0.0rem;
+        --collection-card-text-alignment: left;
+        --collection-card-border-width: 0.0rem;
+        --collection-card-border-opacity: 0.1;
+        --collection-card-shadow-opacity: 0.0;
+        --collection-card-shadow-visible: 0;
+        --collection-card-shadow-horizontal-offset: 0.0rem;
+        --collection-card-shadow-vertical-offset: 0.4rem;
+        --collection-card-shadow-blur-radius: 0.5rem;
+
+        --blog-card-image-padding: 0.0rem;
+        --blog-card-corner-radius: 0.0rem;
+        --blog-card-text-alignment: left;
+        --blog-card-border-width: 0.0rem;
+        --blog-card-border-opacity: 0.1;
+        --blog-card-shadow-opacity: 0.0;
+        --blog-card-shadow-visible: 0;
+        --blog-card-shadow-horizontal-offset: 0.0rem;
+        --blog-card-shadow-vertical-offset: 0.4rem;
+        --blog-card-shadow-blur-radius: 0.5rem;
+
+        --badge-corner-radius: 4.0rem;
+
+        --popup-border-width: 1px;
+        --popup-border-opacity: 0.1;
+        --popup-corner-radius: 0px;
+        --popup-shadow-opacity: 0.05;
+        --popup-shadow-horizontal-offset: 0px;
+        --popup-shadow-vertical-offset: 4px;
+        --popup-shadow-blur-radius: 5px;
+
+        --drawer-border-width: 1px;
+        --drawer-border-opacity: 0.1;
+        --drawer-shadow-opacity: 0.0;
+        --drawer-shadow-horizontal-offset: 0px;
+        --drawer-shadow-vertical-offset: 4px;
+        --drawer-shadow-blur-radius: 5px;
+
+        --spacing-sections-desktop: 0px;
+        --spacing-sections-mobile: 0px;
+
+        --grid-desktop-vertical-spacing: 8px;
+        --grid-desktop-horizontal-spacing: 8px;
+        --grid-mobile-vertical-spacing: 4px;
+        --grid-mobile-horizontal-spacing: 4px;
+
+        --text-boxes-border-opacity: 0.1;
+        --text-boxes-border-width: 0px;
+        --text-boxes-radius: 0px;
+        --text-boxes-shadow-opacity: 0.0;
+        --text-boxes-shadow-visible: 0;
+        --text-boxes-shadow-horizontal-offset: 0px;
+        --text-boxes-shadow-vertical-offset: 4px;
+        --text-boxes-shadow-blur-radius: 5px;
+
+        --buttons-radius: 40px;
+        --buttons-radius-outset: 41px;
+        --buttons-border-width: 1px;
+        --buttons-border-opacity: 1.0;
+        --buttons-shadow-opacity: 1.0;
+        --buttons-shadow-visible: 1;
+        --buttons-shadow-horizontal-offset: 0px;
+        --buttons-shadow-vertical-offset: 4px;
+        --buttons-shadow-blur-radius: 5px;
+        --buttons-border-offset: 0.3px;
+
+        --inputs-radius: 0px;
+        --inputs-border-width: 1px;
+        --inputs-border-opacity: 0.55;
+        --inputs-shadow-opacity: 0.0;
+        --inputs-shadow-horizontal-offset: 0px;
+        --inputs-margin-offset: 0px;
+        --inputs-shadow-vertical-offset: 4px;
+        --inputs-shadow-blur-radius: 5px;
+        --inputs-radius-outset: 0px;
+
+        --variant-pills-radius: 40px;
+        --variant-pills-border-width: 1px;
+        --variant-pills-border-opacity: 0.55;
+        --variant-pills-shadow-opacity: 0.0;
+        --variant-pills-shadow-horizontal-offset: 0px;
+        --variant-pills-shadow-vertical-offset: 4px;
+        --variant-pills-shadow-blur-radius: 5px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: calc(var(--font-body-scale) * 62.5%);
+        height: 100%;
+      }
+
+      body {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 100%;
+        min-height: 100%;
+        margin: 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.06rem;
+        line-height: calc(1 + 0.8 / var(--font-body-scale));
+        font-family: var(--font-body-family);
+        font-style: var(--font-body-style);
+        font-weight: var(--font-body-weight);
+      }
+
+      @media screen and (min-width: 750px) {
+        body {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+<link href="assets/084aa307-base.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="assets/local.css">
+<script src="assets/page.js" defer></script>
+<script src="assets/currency.js" defer></script>
+</head>
+<body class="gradient"><main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      <section id="shopify-section-template--27150248575255__custom_liquid_DQnC6T" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_DQnC6T-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_DQnC6T-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_DQnC6T-padding">
+    <style>
+.alivio-section{
+  background:#f8f4ed;
+  padding:60px 20px;
+  text-align:center;
+  font-family: Georgia, serif;
+}
+
+.alivio-container{
+  max-width:900px;
+  margin:0 auto;
+}
+
+.alivio-title{
+  font-size:clamp(42px,7vw,90px);
+  line-height:1.05;
+  font-weight:700;
+  color:#184726;
+  margin:0 0 0px;
+}
+
+.alivio-title .highlight{
+  color:#c9952e;
+}
+
+.alivio-divider{
+  color:#c9952e;
+  font-size:32px;
+  margin-bottom:0px;
+}
+
+.alivio-subtitle{
+  font-size:clamp(28px,4vw,52px);
+  color:#c9952e;
+  font-weight:700;
+  margin-bottom:0px;
+}
+
+.alivio-text{
+  font-size:clamp(22px,2.8vw,40px);
+  line-height:1.1;
+  color:#184726;
+  max-width:800px;
+  margin:0 auto 5px;
+}
+
+.alivio-book{
+  display:block;
+  text-decoration:none;
+  margin-bottom:35px;
+}
+
+.alivio-book img{
+  width:100%;
+  max-width:380px;
+  height:auto;
+  transition:transform .3s ease;
+}
+
+.alivio-book img:hover{
+  transform:scale(1.03);
+}
+
+.alivio-highlight{
+  background:#184726;
+  color:white;
+  padding:18px 25px;
+  border-radius:16px;
+  display:inline-block;
+  font-size:clamp(18px,2vw,26px);
+  line-height:1.4;
+  margin-bottom:40px;
+  max-width:800px;
+}
+
+.alivio-icons{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:10px;
+  margin-bottom:50px;
+}
+
+.alivio-icon{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  flex:1;
+  min-width:0;
+}
+
+.alivio-icon-circle{
+  width:50px;
+  height:50px;
+  border:2px solid #c9952e;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.alivio-icon-text{
+  color:#184726;
+  font-size:12px;
+  font-weight:600;
+  line-height:1.2;
+}
+
+.alivio-footer{
+  margin-top:20px;
+  background:#184726;
+  color:white;
+  padding:18px 20px;
+  border-radius:14px;
+  font-size:clamp(18px,2vw,28px);
+  font-weight:600;
+  letter-spacing:.5px;
+}
+
+@media(max-width:768px){
+
+  .alivio-section{
+    padding:40px 15px;
+  }
+
+  .alivio-title{
+    font-size:46px;
+    line-height:1.05;
+  }
+
+  .alivio-subtitle{
+    font-size:30px;
+  }
+
+  .alivio-text{
+    font-size:24px;
+  }
+
+  .alivio-icons{
+    gap:6px;
+  }
+
+  .alivio-icon-circle{
+    width:42px;
+    height:42px;
+    font-size:18px;
+  }
+
+  .alivio-icon-text{
+    font-size:10px;
+  }
+
+  .alivio-footer{
+    font-size:16px;
   }
 }
-</script>
-  <script type="module" crossorigin src="/assets/index-Bbg2hyx1.js"></script>
-</head>
-<body class="bg-white text-slate-900 antialiased">
-  <div id="root"></div>
+</style>
+
+<section class="alivio-section">
+  <div class="alivio-container">
+
+    <h1 class="alivio-title">
+      ¿Cansada de la <span class="highlight">hinchazón</span>
+      y la falta de <span class="highlight">energía</span>?
+    </h1>
+
+    <div class="alivio-divider">♥</div>
+
+    <div class="alivio-subtitle">
+      Decile adiós a la inflamación
+    </div>
+
+    <div class="alivio-text">
+      con recetas fáciles y deliciosas que te ayudan a sentirte más liviana desde los primeros días.
+    </div>
+
+    <!-- MOCKUP -->
+    <a href="#agregar-al-carrito" class="alivio-book">
+      <img
+        src="assets/67601237-WhatsApp_Image_2026-05-29_at_18.21.45.jpg"
+        alt="Alivio en Cada Plato"
+      >
+    </a>
+
+    <!-- BENEFICIO PRINCIPAL -->
+    <div class="alivio-highlight">
+      Más de 500 recetas rápidas y antiinflamatorias para dejar de sufrir pensando qué cocinar.
+    </div>
+
+    <!-- BENEFICIOS -->
+    <div class="alivio-icons">
+
+      <div class="alivio-icon">
+        <div class="alivio-icon-circle">🌿</div>
+        <div class="alivio-icon-text">SIN AZÚCAR</div>
+      </div>
+
+      <div class="alivio-icon">
+        <div class="alivio-icon-circle">🌾</div>
+        <div class="alivio-icon-text">SIN GLUTEN</div>
+      </div>
+
+      <div class="alivio-icon">
+        <div class="alivio-icon-circle">⏱️</div>
+        <div class="alivio-icon-text">FÁCILES Y RÁPIDAS</div>
+      </div>
+
+      <div class="alivio-icon">
+        <div class="alivio-icon-circle">❤️</div>
+        <div class="alivio-icon-text">MÁS ENERGÍA</div>
+      </div>
+
+    </div>
+
+    <div class="alivio-footer">
+      COMÉ RICO, SENTITE MEJOR, VIVÍ CON MÁS ENERGÍA.
+    </div>
+
+  </div>
+</section>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_YxgXFQ" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_YxgXFQ-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_YxgXFQ-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_YxgXFQ-padding">
+    <style>
+  .bpsg-hero2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .bpsg-hero2-img {
+    width: 100%;
+    display: block;
+  }
+  .bpsg-chef {
+    width: 100%;
+    position: relative;
+  }
+  .bpsg-chef img {
+    width: 100%;
+    display: block;
+  }
+  .bpsg-chef-caption {
+    background: #fff;
+    padding: 20px 24px;
+    border-top: 3px solid #C8813A;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .bpsg-chef-caption h3 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #2C1A0E;
+    margin: 0 0 4px;
+  }
+  .bpsg-chef-caption p {
+    font-size: 13px;
+    color: #7A6248;
+    margin: 0;
+  }
+</style>
+
+<div class="bpsg-hero2">
+
+  <img
+    class="bpsg-hero2-img"
+    src="assets/33688bfd-WhatsApp_Image_2026-05-29_at_18.42.11.jpg"
+    alt="Aprendé a hacer recetas sin gluten"
+  />
+
+ 
+  </div>
+
+</div>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_PW3MG7" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_PW3MG7-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_PW3MG7-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_PW3MG7-padding">
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@400;500;600;700&display=swap');
+
+  .bpsg-pain {
+    background: #F5EDD8;
+    padding: 64px 24px;
+  }
+
+  .bpsg-pain-inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .bpsg-pain-label {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #C8813A;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .bpsg-pain h2 {
+    font-size: clamp(30px, 4vw, 44px);
+    font-family: 'Playfair Display', serif;
+    color: #2C1A0E;
+    margin-bottom: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .bpsg-pain h2 span {
+    color: #C8813A;
+  }
+
+  /* ACÁ ESTÁ EL CAMBIO DE TIPOGRAFÍA */
+  .bpsg-pain-sub {
+    font-size: 19px;
+    color: #7A6248;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 42px;
+    line-height: 1.8;
+    max-width: 760px;
+  }
+
+  .bpsg-pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .bpsg-pain-card {
+    background: #fff;
+    border: 1.5px solid #E8D0C0;
+    border-left: 6px solid #C0392B;
+    border-radius: 14px;
+    padding: 24px 20px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    box-shadow: 0 4px 12px rgba(192,57,43,0.08);
+  }
+
+  .bpsg-pain-icon {
+    width: 44px;
+    height: 44px;
+    background: #FADADD;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 22px;
+  }
+
+  .bpsg-pain-text {
+    font-size: 16px;
+    color: #2C1A0E;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+
+  .bpsg-pain-text strong {
+    color: #C0392B;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  @media(max-width:768px){
+
+    .bpsg-pain{
+      padding:56px 20px;
+    }
+
+    .bpsg-pain-sub{
+      font-size:17px;
+      line-height:1.75;
+      margin-bottom:34px;
+    }
+
+  }
+</style>
+
+<div class="bpsg-pain">
+  <div class="bpsg-pain-inner">
+
+    <div class="bpsg-pain-label">
+      ¿Te suena familiar?
+    </div>
+
+    <h2>
+      El problema no es la <span>falta de voluntad</span>
+    </h2>
+
+    <p class="bpsg-pain-sub">
+      Es sentirte inflamada después de comer, no saber qué cocinar y terminar cansada de intentar cuidarte sin ver cambios reales.
+    </p>
+
+    <div class="bpsg-pain-grid">
+
+      <div class="bpsg-pain-card">
+        <div class="bpsg-pain-icon">🤰</div>
+        <p class="bpsg-pain-text">
+          ¿Terminás de comer y sentís la panza <strong>pesada o hinchada</strong>, incluso cuando intentás cuidarte?
+        </p>
+      </div>
+
+      <div class="bpsg-pain-card">
+        <div class="bpsg-pain-icon">😣</div>
+        <p class="bpsg-pain-text">
+          ¿Querés comer mejor pero ya no sabés <strong>qué cocinar</strong> para sentirte bien?
+        </p>
+      </div>
+
+      <div class="bpsg-pain-card">
+        <div class="bpsg-pain-icon">😤</div>
+        <p class="bpsg-pain-text">
+          ¿Sentís que hacés el esfuerzo de cuidarte pero igual seguís con <strong>falta de energía y pesadez</strong>?
+        </p>
+      </div>
+
+      <div class="bpsg-pain-card">
+        <div class="bpsg-pain-icon">😰</div>
+        <p class="bpsg-pain-text">
+          ¿Te pasa que empezás a comer saludable… pero terminás abandonando porque no es práctico ni sostenible?
+        </p>
+      </div>
+
+      <div class="bpsg-pain-card">
+        <div class="bpsg-pain-icon">🍬</div>
+        <p class="bpsg-pain-text">
+          ¿Terminás comiendo cualquier cosa por ansiedad, cansancio o falta de ideas?
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_dCiCLQ" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_dCiCLQ-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_dCiCLQ-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_dCiCLQ-padding">
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@400;500;600;700&display=swap');
+
+  .bpsg-shift {
+    background: #fff;
+    padding: 72px 24px;
+  }
+
+  .bpsg-shift-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .bpsg-shift-label {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #C8813A;
+    margin-bottom: 14px;
+    font-weight: 700;
+  }
+
+  .bpsg-shift h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-family: 'Playfair Display', serif;
+    color: #2C1A0E;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    font-weight: 700;
+  }
+
+  .bpsg-shift h2 span {
+    color: #C8813A;
+  }
+
+  .bpsg-shift-sub {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #7A6248;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+
+  .bpsg-shift-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+  }
+
+  .bpsg-shift-card {
+    border-radius: 18px;
+    padding: 28px 24px;
+    text-align: left;
+    background: #FAF7F1;
+    border: 1.5px solid #E8DCCB;
+  }
+
+  .bpsg-shift-card.bad {
+    border-left: 6px solid #C0392B;
+  }
+
+  .bpsg-shift-card.good {
+    border-left: 6px solid #4A7C59;
+    background: #F5FBF7;
+  }
+
+  .bpsg-shift-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #2C1A0E;
+  }
+
+  .bpsg-shift-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .bpsg-shift-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2C1A0E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+
+  .bpsg-shift-icon {
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 2px;
+  }
+</style>
+
+<div class="bpsg-shift">
+  <div class="bpsg-shift-inner">
+
+    <div class="bpsg-shift-label">
+      La diferencia está acá
+    </div>
+
+    <h2>
+      La diferencia no está en hacer <span>dieta</span>
+    </h2>
+
+    <p class="bpsg-shift-sub">
+      Está en tener recetas simples, organizadas y deliciosas que puedas sostener incluso en semanas caóticas, sin pasar hambre ni sentir que estás haciendo sacrificios.
+    </p>
+
+    <div class="bpsg-shift-grid">
+
+      <div class="bpsg-shift-card bad">
+        <div class="bpsg-shift-title">
+          ❌ Dietas extremas
+        </div>
+
+        <div class="bpsg-shift-list">
+          <div class="bpsg-shift-item">
+            <div class="bpsg-shift-icon">✕</div>
+            <div>Son difíciles de sostener y terminás abandonando.</div>
+          </div>
+
+          <div class="bpsg-shift-item">
+            <div class="bpsg-shift-icon">✕</div>
+            <div>Te dejan sin ideas y pensando todo el día en comida.</div>
+          </div>
+
+          <div class="bpsg-shift-item">
+            <div class="bpsg-shift-icon">✕</div>
+            <div>Generan ansiedad y sensación de restricción constante.</div>
+          </div>
+
+          <div class="bpsg-shift-item">
+            <div class="bpsg-shift-icon">✕</div>
+            <div>Terminás volviendo a los mismos hábitos de siempre.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bpsg-shift-card good">
+        <div class="bpsg-shift-title">
+          ✅ Alimentación antiinflamatoria práctica
+        </div>
+
+        <div class="bpsg-shift-list">
+          <div class="bpsg-shift-item">
+            <div class="bpsg-shift-icon">✓</div>
+            <div>Recetas fáciles, rápidas y deliciosas para el día a día.</div>
+          </div>
+
+          <div class="bpsg-shift-item">
+            <div class="bpsg-shift-icon">✓</div>
+            <div>Ingredientes simples y comidas que realmente vas a disfrutar.</div>
+          </div>
+
+          <div class="bpsg-shift-item">
+            <div class="bpsg-shift-icon">✓</div>
+            <div>Menos hinchazón, más liviandad y más energía.</div>
+          </div>
+
+          <div class="bpsg-shift-item">
+            <div class="bpsg-shift-icon">✓</div>
+            <div>Una forma práctica y sostenible de sentirte mejor sin vivir a dieta.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_D6MVTV" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_D6MVTV-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_D6MVTV-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_D6MVTV-padding">
+    <style>
+  .bpsg-cont {
+    background: #E8D5B0;
+    padding: 72px 24px;
+  }
+
+  .bpsg-cont-inner {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .bpsg-cont-label {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #C8813A;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .bpsg-cont h2 {
+    font-size: clamp(30px, 4vw, 46px);
+    font-family: Georgia, serif;
+    color: #2C1A0E;
+    margin-bottom: 18px;
+    line-height: 1.2;
+  }
+
+  .bpsg-cont h2 span {
+    color: #C8813A;
+  }
+
+  .bpsg-cont-sub {
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #7A6248;
+    margin-bottom: 42px;
+    font-family: sans-serif;
+  }
+
+  .bpsg-cont-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+  }
+
+  .bpsg-cont-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(44, 26, 14, 0.08);
+    transition: transform 0.2s ease;
+  }
+
+  .bpsg-cont-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .bpsg-cont-card-img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .bpsg-cont-card-body {
+    padding: 20px;
+  }
+
+  .bpsg-cont-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #2C1A0E;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: sans-serif;
+  }
+
+  .bpsg-cont-card-desc {
+    font-size: 14px;
+    color: #7A6248;
+    font-family: sans-serif;
+    line-height: 1.6;
+  }
+</style>
+
+<div class="bpsg-cont">
+  <div class="bpsg-cont-inner">
+
+    <div class="bpsg-cont-label">
+      Todo resuelto en un solo lugar
+    </div>
+
+    <h2>
+      Todo lo que necesitás para <span>sentirte más liviana</span> y dejar de sufrir pensando qué cocinar
+    </h2>
+
+    <p class="bpsg-cont-sub">
+      Recetas simples, rápidas y deliciosas para que cuidarte deje de sentirse complicado, incluso en semanas con poco tiempo.
+    </p>
+
+    <div class="bpsg-cont-grid">
+
+      <div class="bpsg-cont-card">
+        <img src="assets/5b44b9f0-Healthy_Eating_Ideas_for_a_Balanced_Lifestyle.jpg" alt="Comidas antiinflamatorias" class="bpsg-cont-card-img" />
+
+        <div class="bpsg-cont-card-body">
+          <div class="bpsg-cont-card-title">
+            Comidas antiinflamatorias que te dejan satisfecha y liviana
+          </div>
+
+          <div class="bpsg-cont-card-desc">
+            Platos completos, ricos y sin azúcar ni gluten para disfrutar sin sentirte pesada después.
+          </div>
+        </div>
+      </div>
+
+      <div class="bpsg-cont-card">
+        <img src="assets/326eb249-Easy_Yogurt_Granola_Bowls_4_Ways___Begin_With_Balance.webp" alt="Desayunos antiinflamatorios" class="bpsg-cont-card-img" />
+
+        <div class="bpsg-cont-card-body">
+          <div class="bpsg-cont-card-title">
+            Desayunos y meriendas para arrancar el día con más energía
+          </div>
+
+          <div class="bpsg-cont-card-desc">
+            Opciones rápidas y fáciles para sentirte bien desde la primera comida del día.
+          </div>
+        </div>
+      </div>
+
+      <div class="bpsg-cont-card">
+        <img src="assets/2f5f2fc3-Frozen_Yogurt_Bark_with_Berries_and_Granola.webp" alt="Snacks saludables" class="bpsg-cont-card-img" />
+
+        <div class="bpsg-cont-card-body">
+          <div class="bpsg-cont-card-title">
+            Opciones rápidas para evitar terminar picando cualquier cosa
+          </div>
+
+          <div class="bpsg-cont-card-desc">
+            Snacks simples y saciantes para esos momentos donde aparece el antojo o la ansiedad.
+          </div>
+        </div>
+      </div>
+
+      <div class="bpsg-cont-card">
+        <img src="assets/d8871be9-WhatsApp_Image_2026-04-15_at_11.26.21.jpg" alt="Postres sin azúcar" class="bpsg-cont-card-img" />
+
+        <div class="bpsg-cont-card-body">
+          <div class="bpsg-cont-card-title">
+            Postres sin azúcar para disfrutar algo dulce sin sentirte pesada
+          </div>
+
+          <div class="bpsg-cont-card-desc">
+            Preparaciones deliciosas para disfrutar sin culpa y sin volver a caer en lo de siempre.
+          </div>
+        </div>
+      </div>
+
+      <div class="bpsg-cont-card">
+        <img src="assets/361ec2b8-10_Best_Foods_To_Eat_On_a_Keto_Diet.jpg" alt="Guía práctica" class="bpsg-cont-card-img" />
+
+        <div class="bpsg-cont-card-body">
+          <div class="bpsg-cont-card-title">
+            Cómo reemplazar azúcar y harinas sin dejar de disfrutar la comida
+          </div>
+
+          <div class="bpsg-cont-card-desc">
+            Ideas prácticas y fáciles para transformar tus comidas sin sentir que estás haciendo dieta.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__main" class="shopify-section section"><product-info
+  id="MainProduct-template--27150248575255__main"
+  class="section-template--27150248575255__main-padding gradient color-scheme-1"
+  data-section="template--27150248575255__main"
+  data-product-id="10308208165143"
+  data-update-url="true"
+  data-url="/products/aliviopack"
+  
+>
+  <link href="assets/c95b112c-section-main-product.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/d392289e-component-accordion.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/5e8515a4-component-price.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/d838d5e1-component-slider.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/80382c19-component-rating.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/c63e3a33-component-deferred-media.css" rel="stylesheet" type="text/css" media="all" />
+
+  
+<style data-shopify>.section-template--27150248575255__main-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-template--27150248575255__main-padding {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }</style>
+  
+
+  <div class="page-width">
+    <div class="product product--large product--left product--stacked product--mobile-hide grid grid--1-col grid--2-col-tablet">
+      <div class="grid__item product__media-wrapper">
+        
+<media-gallery
+  id="MediaGallery-template--27150248575255__main"
+  role="region"
+  
+    class="product__column-sticky"
+  
+  aria-label="Visor de la galería"
+  data-desktop-layout="stacked"
+>
+  <div id="GalleryStatus-template--27150248575255__main" class="visually-hidden" role="status"></div>
+  <slider-component id="GalleryViewer-template--27150248575255__main" class="slider-mobile-gutter">
+    <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-template--27150248575255__main">
+      Ir directamente a la información del producto
+    </a>
+    <ul
+      id="Slider-Gallery-template--27150248575255__main"
+      class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile"
+      role="list"
+    >
+<li
+            id="Slide-template--27150248575255__main-43775511789847"
+            class="product__media-item grid__item slider__slide is-active scroll-trigger animate--fade-in"
+            data-media-id="template--27150248575255__main-43775511789847"
+          >
+
+<div
+  class="product-media-container media-type-image media-fit-contain global-media-settings gradient constrain-height"
+  style="--ratio: 1.0; --preview-ratio: 1.0;"
+>
+  <modal-opener
+    class="product__modal-opener product__modal-opener--image"
+    data-modal="#ProductModal-template--27150248575255__main"
+  >
+    <span
+      class="product__media-icon motion-reduce quick-add-hidden product__media-icon--none"
+      aria-hidden="true"
+    >
+      
+          <span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-plus" viewBox="0 0 19 19"><path fill="currentColor" fill-rule="evenodd" d="M4.667 7.94a.5.5 0 0 1 .499-.501l5.534-.014a.5.5 0 1 1 .002 1l-5.534.014a.5.5 0 0 1-.5-.5" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M7.926 4.665a.5.5 0 0 1 .501.498l.014 5.534a.5.5 0 1 1-1 .003l-.014-5.534a.5.5 0 0 1 .499-.501" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M12.832 3.03a6.931 6.931 0 1 0-9.802 9.802 6.931 6.931 0 0 0 9.802-9.802M2.323 2.323a7.931 7.931 0 0 1 11.296 11.136l4.628 4.628a.5.5 0 0 1-.707.707l-4.662-4.662A7.932 7.932 0 0 1 2.323 2.323" clip-rule="evenodd"/></svg>
+</span>
+      
+    </span>
+
+<div class="loading__spinner hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66"><circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"/></svg>
+
+</div>
+<div class="product__media media media--transparent">
+      <img src="assets/3464dca5-WhatsApp_Image_2026-05-29_at_18.21.45.jpg" alt="" width="1946" height="1946" loading="lazy" class="image-magnify-none" sizes="(min-width: 1200px) 715px, (min-width: 990px) calc(65.0vw - 10rem), (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw / 1 - 4rem)">
+    </div>
+    <button
+      class="product__media-toggle quick-add-hidden product__media-zoom-none"
+      type="button"
+      aria-haspopup="dialog"
+      data-media-id="43775511789847"
+    >
+      <span class="visually-hidden">
+        Abrir elemento multimedia 1 en una ventana modal
+      </span>
+    </button>
+  </modal-opener></div>
+
+          </li></ul>
+    <div class="slider-buttons quick-add-hidden small-hide">
+      <button
+        type="button"
+        class="slider-button slider-button--prev"
+        name="previous"
+        aria-label="Diapositiva a la izquierda"
+      >
+        <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"/></svg>
+</span>
+      </button>
+      <div class="slider-counter caption">
+        <span class="slider-counter--current">1</span>
+        <span aria-hidden="true"> / </span>
+        <span class="visually-hidden">de</span>
+        <span class="slider-counter--total">1</span>
+      </div>
+      <button
+        type="button"
+        class="slider-button slider-button--next"
+        name="next"
+        aria-label="Diapositiva a la derecha"
+      >
+        <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"/></svg>
+</span>
+      </button>
+    </div>
+  </slider-component></media-gallery>
+
+      </div>
+      <div class="product__info-wrapper grid__item scroll-trigger animate--slide-in">
+        <section
+          id="ProductInfo-template--27150248575255__main"
+          class="product__info-container product__column-sticky"
+        ><p
+                  class="product__text inline-richtext caption-with-letter-spacing"
+                  
+                >+3579 Descargas</p><div class="product__title" >
+                  <h1>Alivio En Cada Plato</h1>
+                  <a href="#agregar-al-carrito" class="product__title">
+                    <h2 class="h1">
+                      Alivio En Cada Plato
+                    </h2>
+                  </a>
+                </div><p
+                  class="product__text inline-richtext"
+                  
+                >Más de 500 recetas sin gluten y sin azúcar para desinflamarte, sentirte más liviana y volver a disfrutar cada comida.</p><div id="price-template--27150248575255__main" role="status" >
+<div
+    class="
+      price price--large price--on-sale price--show-badge"
+  >
+    <div class="price__container"><div class="price__regular"><span class="visually-hidden visually-hidden--inline">Precio habitual</span>
+          <span class="price-item price-item--regular">
+            <span data-usd="15.00">US$ 15,00</span>
+          </span></div>
+      <div class="price__sale">
+          <span class="visually-hidden visually-hidden--inline">Precio habitual</span>
+          <span>
+            <s class="price-item price-item--regular">
+              
+                <span data-usd="30.00">US$ 30,00</span>
+              
+            </s>
+          </span><span class="visually-hidden visually-hidden--inline">Precio de oferta</span>
+        <span class="price-item price-item--sale price-item--last">
+          <span data-usd="15.00">US$ 15,00</span>
+        </span>
+      </div></div><span class="badge price__badge-sale color-scheme-4">
+        Oferta 🔥 - 50% DESCUENTO
+      </span>
+
+      <span class="badge price__badge-sold-out color-scheme-3">
+        Agotado
+      </span></div>
+
+</div><div ></div>
+
+
+<div ><product-form
+      class="product-form"
+      data-hide-errors="false"
+      data-section-id="template--27150248575255__main"
+    >
+      <div class="product-form__error-message-wrapper" role="alert" hidden>
+        <span class="svg-wrapper"><svg class="icon icon-error" viewBox="0 0 13 13"><circle cx="6.5" cy="6.5" r="5.5" stroke="#fff" stroke-width="2"/><circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width=".7"/><path fill="#fff" d="m5.874 3.528.1 4.044h1.053l.1-4.044zm.627 6.133c.38 0 .68-.288.68-.656s-.3-.656-.68-.656-.681.288-.681.656.3.656.68.656"/><path fill="#fff" stroke="#EB001B" stroke-width=".7" d="M5.874 3.178h-.359l.01.359.1 4.044.008.341h1.736l.008-.341.1-4.044.01-.359H5.873Zm.627 6.833c.56 0 1.03-.432 1.03-1.006s-.47-1.006-1.03-1.006-1.031.432-1.031 1.006.47 1.006 1.03 1.006Z"/></svg>
+</span>
+        <span class="product-form__error-message"></span>
+      </div><div class="product-form__buttons" id="agregar-al-carrito"><a href="https://pay.hotmart.com/C96666094Q?checkoutMode=2&amp;off=8s7i881n" class="hotmart__button-checkout product-form__submit button button--full-width button--primary"><span>Comprar Agora</span></a></div></product-form><link href="assets/7fab0e1f-component-pickup-availability.css" rel="stylesheet" type="text/css" media="all" />
+<pickup-availability
+      class="product__pickup-availabilities quick-add-hidden"
+      
+      data-root-url="/"
+      data-variant-id="53020568748311"
+      data-has-only-default-variant="true"
+      data-product-page-color-scheme="gradient color-scheme-1"
+    >
+      <template>
+        <pickup-availability-preview class="pickup-availability-preview">
+          <span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-unavailable" viewBox="0 0 20 20"><path fill="#DE3618" stroke="#fff" d="M13.94 3.94 10 7.878l-3.94-3.94A1.499 1.499 0 1 0 3.94 6.06L7.88 10l-3.94 3.94a1.499 1.499 0 1 0 2.12 2.12L10 12.12l3.94 3.94a1.497 1.497 0 0 0 2.12 0 1.5 1.5 0 0 0 0-2.12L12.122 10l3.94-3.94a1.499 1.499 0 1 0-2.121-2.12z"/></svg>
+</span>
+          <div class="pickup-availability-info">
+            <p class="caption-large">No se pudo cargar la disponibilidad de retiro</p>
+            <button class="pickup-availability-button link link--text underlined-link">
+              Actualizar
+            </button>
+          </div>
+        </pickup-availability-preview>
+      </template>
+    </pickup-availability>
+
+    </div>
+<a href="#agregar-al-carrito" class="link product__view-details animate-arrow">
+            Ver todos los detalles
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-arrow" viewBox="0 0 14 10"><path fill="currentColor" fill-rule="evenodd" d="M8.537.808a.5.5 0 0 1 .817-.162l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L11.793 5.5H1a.5.5 0 0 1 0-1h10.793L8.646 1.354a.5.5 0 0 1-.109-.546" clip-rule="evenodd"/></svg>
+</a>
+        </section>
+      </div>
+    </div>
+
+    
+
+<product-modal id="ProductModal-template--27150248575255__main" class="product-media-modal media-modal">
+  <div
+    class="product-media-modal__dialog color-scheme-1 gradient"
+    role="dialog"
+    aria-label="Galería multimedia"
+    aria-modal="true"
+    tabindex="-1"
+  >
+    <button
+      id="ModalClose-template--27150248575255__main"
+      type="button"
+      class="product-media-modal__toggle"
+      aria-label="Cerrar"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-close" viewBox="0 0 18 17"><path fill="currentColor" d="M.865 15.978a.5.5 0 0 0 .707.707l7.433-7.431 7.579 7.282a.501.501 0 0 0 .846-.37.5.5 0 0 0-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 1 0-.707-.708L8.991 7.853 1.413.573a.5.5 0 1 0-.693.72l7.563 7.268z"/></svg>
+
+    </button>
+
+    <div
+      class="product-media-modal__content color-scheme-1 gradient"
+      role="document"
+      aria-label="Galería multimedia"
+      tabindex="0"
+    >
+<img
+    class="global-media-settings global-media-settings--no-shadow"
+    sizes="(min-width: 750px) calc(100vw - 22rem), 1100px"
+    src="assets/4afe7982-WhatsApp_Image_2026-05-29_at_18.21.45.jpg"
+    alt="Alivio En Cada Plato"
+    loading="lazy"
+    width="1100"
+    height="1100"
+    data-media-id="43775511789847"
+  ></div>
+  </div>
+</product-modal>
+
+
+    
+
+      
+  </div>
+</product-info>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_Dk7cUV" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_Dk7cUV-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_Dk7cUV-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_Dk7cUV-padding">
+    <style>
+  .bpsg-medios-pago {
+    text-align: center;
+    padding: 16px 24px;
+    background: #fff;
+  }
+  .bpsg-medios-pago img {
+    max-width: 380px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+
+<div class="bpsg-medios-pago">
+  <img
+    src="assets/d68a47e7-Diseno_sin_titulo_20.png"
+    alt="Pago seguro garantizado - Visa, Mastercard, Maestro, Mercado Pago"
+  />
+</div>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_8cMw8L" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_8cMw8L-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_8cMw8L-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_8cMw8L-padding">
+    <style>
+  .bpsg-garantia {
+    background: #fff;
+    padding: 16px 20px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .bpsg-garantia-box {
+    border: 2px solid #4A7C59;
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #F0F7F2;
+  }
+  .bpsg-garantia-icon {
+    font-size: 36px;
+    flex-shrink: 0;
+  }
+  .bpsg-garantia-content {}
+  .bpsg-garantia-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2C1A0E;
+    font-family: sans-serif;
+    margin-bottom: 4px;
+  }
+  .bpsg-garantia-title span { color: #4A7C59; }
+  .bpsg-garantia-desc {
+    font-size: 12px;
+    color: #7A6248;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="bpsg-garantia">
+  <div class="bpsg-garantia-box">
+    <div class="bpsg-garantia-icon">🛡️</div>
+    <div class="bpsg-garantia-content">
+      <div class="bpsg-garantia-title">Garantía <span>30 días — devolución total</span></div>
+      <div class="bpsg-garantia-desc">Si no quedás conforme, te devolvemos el 100% del dinero. Sin preguntas, sin vueltas.</div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_PHFwnC" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_PHFwnC-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_PHFwnC-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_PHFwnC-padding">
+    <style>
+  .bpsg-urgencia {
+    background: #fff;
+    padding: 24px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .bpsg-urgencia-cupos {
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #2C1A0E;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  .bpsg-urgencia-cupos span { color: #C0392B; }
+  .bpsg-urgencia-box {
+    border: 2px solid #C8813A;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    background: #FFFDF8;
+  }
+  .bpsg-urgencia-title {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #C0392B;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .bpsg-urgencia-sub {
+    font-size: 13px;
+    color: #7A6248;
+    font-family: sans-serif;
+    margin-bottom: 16px;
+  }
+  .bpsg-urgencia-sub span { font-weight: 700; color: #2C1A0E; }
+  .bpsg-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .bpsg-counter-block { text-align: center; }
+  .bpsg-counter-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: #2C1A0E;
+    color: #F5EDD8;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: sans-serif;
+    border-radius: 10px;
+  }
+  .bpsg-counter-label {
+    font-size: 10px;
+    color: #7A6248;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .bpsg-counter-sep {
+    font-size: 32px;
+    font-weight: 700;
+    color: #C8813A;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  .bpsg-urgencia-promo {
+    background: #C8813A;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    letter-spacing: 0.3px;
+  }
+  .bpsg-urgencia-viendo {
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #7A6248;
+    margin-top: 14px;
+  }
+  .bpsg-urgencia-viendo span { font-weight: 700; color: #C0392B; }
+</style>
+
+<div class="bpsg-urgencia">
+  <div class="bpsg-urgencia-cupos">
+    ⚡ ¡Últimos <span>3 cupos</span> en oferta!
+  </div>
+  <div class="bpsg-urgencia-box">
+    <div class="bpsg-urgencia-title" id="bpsg-dia-titulo"></div>
+    <div class="bpsg-urgencia-sub">Tu precio reservado por <span>15 minutos</span></div>
+    <div class="bpsg-counter">
+      <div class="bpsg-counter-block">
+        <div class="bpsg-counter-num" id="bpsg-min">15</div>
+        <div class="bpsg-counter-label">Minutos</div>
+      </div>
+      <div class="bpsg-counter-sep">:</div>
+      <div class="bpsg-counter-block">
+        <div class="bpsg-counter-num" id="bpsg-seg">00</div>
+        <div class="bpsg-counter-label">Segundos</div>
+      </div>
+    </div>
+    <div class="bpsg-urgencia-promo">
+      Hoy 50% descuento + BONOS de regalo
+    </div>
+  </div>
+  <div class="bpsg-urgencia-viendo">
+    👁 <span id="bpsg-viendo">83</span> personas están viendo esto ahora
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_XMTRLp" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_XMTRLp-padding {
+    padding-top: calc(40px * 0.75);
+    padding-bottom: calc(52px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_XMTRLp-padding {
+      padding-top: 40px;
+      padding-bottom: 52px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_XMTRLp-padding">
+    <style>
+.bpsg-miniinc {
+  background: #fff;
+  padding: 42px 24px;
+}
+
+.bpsg-miniinc-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.bpsg-miniinc-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C8813A;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.bpsg-miniinc h2 {
+  font-size: clamp(28px,4vw,40px);
+  line-height: 1.2;
+  color: #2C1A0E;
+  font-family: Georgia, serif;
+  margin-bottom: 14px;
+}
+
+.bpsg-miniinc h2 span {
+  color: #C8813A;
+}
+
+.bpsg-miniinc-sub {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #7A6248;
+  margin-bottom: 32px;
+  font-family: sans-serif;
+  max-width: 720px;
+}
+
+.bpsg-miniinc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 14px;
+}
+
+.bpsg-miniinc-item {
+  background: #F9F4EA;
+  border: 1px solid #E8D5B0;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.bpsg-miniinc-item strong {
+  display: block;
+  color: #2C1A0E;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-family: sans-serif;
+}
+
+.bpsg-miniinc-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #7A6248;
+  font-family: sans-serif;
+}
+</style>
+
+<section class="bpsg-miniinc">
+
+  <div class="bpsg-miniinc-inner">
+
+    <div class="bpsg-miniinc-label">
+      ¿Qué vas a recibir?
+    </div>
+
+    <h2>
+      Todo pensado para que comer saludable se sienta <span>simple</span>
+    </h2>
+
+    <p class="bpsg-miniinc-sub">
+      Vas a tener recetas, planificación e ideas prácticas para dejar de improvisar tus comidas todos los días.
+    </p>
+
+    <div class="bpsg-miniinc-grid">
+
+      <div class="bpsg-miniinc-item">
+        <strong>🥗 +500 recetas saludables</strong>
+        <p>Opciones rápidas, ricas y fáciles para todos los días.</p>
+      </div>
+
+      <div class="bpsg-miniinc-item">
+        <strong>🍞 Sin gluten y sin azúcar</strong>
+        <p>Recetas pensadas para sentirte más liviana después de comer.</p>
+      </div>
+
+      <div class="bpsg-miniinc-item">
+        <strong>📅 Organización semanal</strong>
+        <p>Planificadores y guías para ahorrar tiempo en la cocina.</p>
+      </div>
+
+      <div class="bpsg-miniinc-item">
+        <strong>🍫 Snacks y postres</strong>
+        <p>Ideas dulces y saciantes para evitar antojos y picoteos.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_9B9cp8" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_9B9cp8-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_9B9cp8-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_9B9cp8-padding">
+    
+
+<style>
+  .bonos-section {
+    background-color: #FAF6F1;
+    padding: 60px 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .bonos-eyebrow {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #C8873A;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .bonos-alerta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #1C1C1C;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 10px 24px;
+    max-width: 380px;
+    margin: 0 auto 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .bonos-titulo {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1C1C1C;
+    margin-bottom: 8px;
+  }
+
+  .bonos-titulo span {
+    color: #C8873A;
+  }
+
+  .bonos-subtitulo {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 40px;
+  }
+
+  .bonos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 680px;
+    margin: 0 auto 32px;
+  }
+
+  .bono-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+  }
+
+ .bono-card-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    background: #f0ebe4;
+  }
+
+  .bono-card-body {
+    padding: 14px 16px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .bono-emoji {
+    font-size: 18px;
+  }
+
+  .bono-nombre {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1C1C1C;
+    line-height: 1.3;
+  }
+
+  .bono-desc {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .bono-precio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .bono-precio-tachado {
+    font-size: 12px;
+    color: #aaa;
+    text-decoration: line-through;
+  }
+
+  .bono-precio-gratis {
+    font-size: 13px;
+    font-weight: 800;
+    color: #2E7D52;
+    letter-spacing: 0.5px;
+  }
+
+  .bono-card.sorpresa {
+    background: linear-gradient(135deg, #2C1A0E, #4A2C10);
+    grid-column: span 2;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .bono-card.sorpresa .bono-card-img {
+    width: 90px;
+    height: 90px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+  .bono-card.sorpresa .bono-nombre {
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .bono-card.sorpresa .bono-desc {
+    color: #d4b896;
+  }
+
+  .bono-card.sorpresa .bono-precio-tachado {
+    color: #8a6a4a;
+  }
+
+  .bono-card.sorpresa .bono-precio-gratis {
+    color: #C8873A;
+  }
+
+  .bonos-total {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .bonos-total-texto {
+    font-size: 15px;
+    color: #555;
+  }
+
+  .bonos-total-texto s {
+    color: #aaa;
+  }
+
+  .bonos-total-texto strong {
+    color: #1C1C1C;
+    font-size: 17px;
+  }
+
+  .bonos-cta {
+    display: block;
+    background: #C8873A;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px 24px;
+    border-radius: 50px;
+    max-width: 360px;
+    margin: 0 auto;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 480px) {
+    .bonos-titulo { font-size: 26px; }
+    .bono-card.sorpresa {
+      flex-direction: column;
+      text-align: center;
+    }
+    .bono-card.sorpresa .bono-card-img {
+      width: 100%;
+      height: 120px;
+      aspect-ratio: auto;
+    }
+  }
+</style>
+
+<section class="bonos-section">
+
+  <p class="bonos-eyebrow">Además, también recibís</p>
+
+
+
+  <h2 class="bonos-titulo">TODO esto <span>gratis</span></h2>
+  <p class="bonos-subtitulo">Con tu compra, recibís estos bonos sin costo adicional.</p>
+
+  <div class="bonos-grid">
+
+    <!-- BONO 1 → reemplazá TU_URL_IMAGEN_AQUI_BONO1 -->
+    <div class="bono-card">
+      <img class="bono-card-img" src="assets/21ef296e-WhatsApp_Image_2026-05-05_at_00.48.41_2.jpg" alt="Aderezos Saludables">
+      <div class="bono-card-body">
+        <span class="bono-emoji">🥗</span>
+        <p class="bono-nombre">Aderezos Saludables</p>
+        <p class="bono-desc">Salsas, vinagretas y dips caseros para potenciar cada receta de tu freidora.</p>
+        <div class="bono-precio">
+          <span class="bono-precio-tachado" data-usd="5.22">US$ 5,22</span>
+          <span class="bono-precio-gratis">HOY GRATIS</span>
+        </div>
+      </div>
+    </div>
+
+   <!-- BONO 2 → reemplazá TU_URL_IMAGEN_AQUI_BONO2 -->
+<div class="bono-card">
+  <img class="bono-card-img" src="assets/e45e1178-ChatGPT_Image_7_may_2026_01_32_52_a.m..png" alt="El Heladero Saludable">
+  <div class="bono-card-body">
+    <span class="bono-emoji">🍦</span>
+    <p class="bono-nombre">El Heladero Saludable</p>
+    <p class="bono-desc">Helados cremosos y sin azúcar para los días de calor, sin culpa y sin salir de la dieta antiinflamatoria.</p>
+    <div class="bono-precio">
+      <span class="bono-precio-tachado" data-usd="5.88">US$ 5,88</span>
+      <span class="bono-precio-gratis">HOY GRATIS</span>
+    </div>
+  </div>
+</div>
+
+    <!-- BONO 3 → reemplazá TU_URL_IMAGEN_AQUI_BONO3 -->
+    <div class="bono-card">
+      <img class="bono-card-img" src="assets/25d7a002-WhatsApp_Image_2026-05-05_at_00.48.41.jpg" alt="Batidos Energizantes">
+      <div class="bono-card-body">
+        <span class="bono-emoji">🍫</span>
+        <p class="bono-nombre">Batidos Energizantes</p>
+        <p class="bono-desc">Batidos detox que ayudan a desinflamar.</p>
+        <div class="bono-precio">
+          <span class="bono-precio-tachado" data-usd="5.88">US$ 5,88</span>
+          <span class="bono-precio-gratis">HOY GRATIS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONO 4 → reemplazá TU_URL_IMAGEN_AQUI_BONO4 -->
+    <div class="bono-card">
+      <img class="bono-card-img" src="assets/0b352b36-WhatsApp_Image_2026-05-05_at_00.48.41_1.jpg" alt="Planificador Semanal de Comidas">
+      <div class="bono-card-body">
+        <span class="bono-emoji">📅</span>
+        <p class="bono-nombre">Planificador Semanal de Comidas</p>
+        <p class="bono-desc">Organizá toda tu semana en minutos. Nunca más la pregunta "¿qué cocinamos hoy?"</p>
+        <div class="bono-precio">
+          <span class="bono-precio-tachado" data-usd="6.54">US$ 6,54</span>
+          <span class="bono-precio-gratis">HOY GRATIS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONO 5 → reemplazá TU_URL_IMAGEN_AQUI_BONO5 -->
+    <div class="bono-card">
+      <img class="bono-card-img" src="assets/195da348-WhatsApp_Image_2026-05-05_at_01.02.13.jpg" alt="Mini Guía de Snacks Rápidos">
+      <div class="bono-card-body">
+        <span class="bono-emoji">🍿</span>
+        <p class="bono-nombre">Mini Guía de Snacks Rápidos</p>
+        <p class="bono-desc">Los mejores snacks para freidora de aire: listos en menos de 10 minutos.</p>
+        <div class="bono-precio">
+          <span class="bono-precio-tachado" data-usd="4.56">US$ 4,56</span>
+          <span class="bono-precio-gratis">HOY GRATIS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONO 6 → reemplazá TU_URL_IMAGEN_AQUI_BONO6 -->
+    <div class="bono-card">
+      <img class="bono-card-img" src="assets/d8ab8108-WhatsApp_Image_2026-05-05_at_01.02.13_1.jpg" alt="Pan Casero Saludable">
+      <div class="bono-card-body">
+        <span class="bono-emoji">🍞</span>
+        <p class="bono-nombre">Pan Casero Saludable</p>
+        <p class="bono-desc">Panes esponjosos, dorados y llenos de sabor hechos en casa sin complicaciones.</p>
+        <div class="bono-precio">
+          <span class="bono-precio-tachado" data-usd="7.20">US$ 7,20</span>
+          <span class="bono-precio-gratis">HOY GRATIS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONO 7 → reemplazá TU_URL_IMAGEN_AQUI_BONO7 -->
+    <div class="bono-card">
+      <img class="bono-card-img" src="assets/fe6cb94f-WhatsApp_Image_2026-05-05_at_01.02.12.jpg">
+      <div class="bono-card-body">
+        <span class="bono-emoji">🍽️</span>
+        <p class="bono-nombre">Recetas Libres</p>
+        <p class="bono-desc">Cocina sin restricciones: recetas pensadas para que todos en la mesa disfruten igual.</p>
+        <div class="bono-precio">
+          <span class="bono-precio-tachado" data-usd="5.88">US$ 5,88</span>
+          <span class="bono-precio-gratis">HOY GRATIS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONO 8 → reemplazá TU_URL_IMAGEN_AQUI_BONO8 -->
+    <div class="bono-card">
+      <img class="bono-card-img" src="assets/1042cb0b-WhatsApp_Image_2026-05-05_at_01.12.14.jpg" alt="Sin Lácteos Con Sabor">
+      <div class="bono-card-body">
+        <span class="bono-emoji">🥛</span>
+        <p class="bono-nombre">Sin Lácteos, Con Sabor</p>
+        <p class="bono-desc">Recetas cremosas, ricas y saciantes — sin una gota de lácteos.</p>
+        <div class="bono-precio">
+          <span class="bono-precio-tachado" data-usd="5.22">US$ 5,22</span>
+          <span class="bono-precio-gratis">HOY GRATIS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONO 9 SORPRESA → reemplazá TU_URL_IMAGEN_AQUI_BONO9 -->
+    <div class="bono-card sorpresa">
+      <img class="bono-card-img" src="assets/5fe37ab0-ChatGPT_Image_28_abr_2026_06_44_21_p.m..png" alt="Bono Sorpresa">
+      <div class="bono-card-body">
+        <span class="bono-emoji">🎁</span>
+        <p class="bono-nombre">Bono Sorpresa</p>
+        <p class="bono-desc">Se revela con tu compra. Algo que no te esperás y que vas a amar.</p>
+        <div class="bono-precio">
+          <span class="bono-precio-tachado" data-usd="7.86">US$ 7,86</span>
+          <span class="bono-precio-gratis">HOY GRATIS</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bonos-total">
+    <div style="background: #fff; border: 2px dashed #C8873A; border-radius: 16px; padding: 20px 24px; max-width: 400px; margin: 0 auto;">
+      <p style="font-size: 13px; color: #888; font-family: sans-serif; margin: 0 0 6px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;">Valor total de los bonos</p>
+      <p style="font-size: 28px; font-family: 'Playfair Display', serif; color: #aaa; text-decoration: line-through; margin: 0 0 4px;"><span data-usd="54.24" data-bonus-total>US$ 54,24</span></p>
+      <p style="font-size: 32px; font-family: 'Playfair Display', serif; font-weight: 700; color: #2E7D52; margin: 0;">HOY GRATIS 🎁</p>
+    </div>
+  </div>
+
+  <a href="https://pay.hotmart.com/C96666094Q?checkoutMode=2&amp;off=8s7i881n" class="bonos-cta">
+    🎁 Incluidos sin costo hoy
+  </a>
+
+
+
+</section>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_xrDdLe" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_xrDdLe-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_xrDdLe-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_xrDdLe-padding">
+    <style>
+  .bpsg-rev {
+    background: #fff;
+    padding: 72px 20px;
+  }
+  .bpsg-rev-inner {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .bpsg-rev-label {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C8813A;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .bpsg-rev h2 {
+    text-align: center;
+    font-size: clamp(30px,4vw,46px);
+    line-height: 1.18;
+    color: #2C1A0E;
+    font-family: Georgia, serif;
+    margin-bottom: 16px;
+  }
+  .bpsg-rev h2 span {
+    color: #C8813A;
+  }
+  .bpsg-rev-sub {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #7A6248;
+    font-family: sans-serif;
+    max-width: 720px;
+    margin: 0 auto 44px;
+  }
+  .bpsg-rev-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 44px;
+    flex-wrap: wrap;
+  }
+  .bpsg-rev-stars {
+    color: #C8873A;
+    font-size: 21px;
+    letter-spacing: 2px;
+  }
+  .bpsg-rev-score {
+    font-size: 15px;
+    color: #2C1A0E;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+  .bpsg-rev-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 18px;
+  }
+  .bpsg-rev-card {
+    background: #FAF6F1;
+    border: 1px solid #E8D5B0;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  }
+  .bpsg-rev-photo {
+    display: block;
+    width: calc(100% + 40px);
+    margin: -20px -20px 14px -20px;
+    border-radius: 18px 18px 0 0;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  .bpsg-rev-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .bpsg-rev-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #E8D5B0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2C1A0E;
+    font-family: sans-serif;
+    flex-shrink: 0;
+  }
+  .bpsg-rev-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2C1A0E;
+    font-family: sans-serif;
+  }
+  .bpsg-rev-verified {
+    font-size: 11px;
+    color: #4A7C59;
+    font-family: sans-serif;
+    margin-top: 2px;
+  }
+  .bpsg-rev-text {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #2C1A0E;
+    font-family: sans-serif;
+    margin-bottom: 14px;
+  }
+  .bpsg-rev-reply {
+    background: #fff;
+    border-radius: 12px;
+    padding: 12px 14px;
+    border: 1px solid #E8D5B0;
+  }
+  .bpsg-rev-reply strong {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #C8873A;
+    font-family: sans-serif;
+  }
+  .bpsg-rev-reply p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #7A6248;
+    font-family: sans-serif;
+  }
+  @media(max-width:768px){
+    .bpsg-rev{
+      padding:56px 14px;
+    }
+    .bpsg-rev-grid{
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .bpsg-rev-card{
+      padding:14px;
+      border-radius:14px;
+    }
+    .bpsg-rev-photo{
+      width: calc(100% + 28px);
+      margin: -14px -14px 10px -14px;
+      border-radius: 14px 14px 0 0;
+    }
+    .bpsg-rev-avatar{
+      width:34px;
+      height:34px;
+      font-size:11px;
+    }
+    .bpsg-rev-name{
+      font-size:12px;
+    }
+    .bpsg-rev-verified{
+      font-size:9px;
+    }
+    .bpsg-rev-text{
+      font-size:12px;
+      line-height:1.55;
+      margin-bottom:10px;
+    }
+    .bpsg-rev-reply{
+      padding:10px;
+    }
+    .bpsg-rev-reply strong{
+      font-size:10px;
+    }
+    .bpsg-rev-reply p{
+      font-size:11px;
+      line-height:1.45;
+    }
+  }
+</style>
+<section class="bpsg-rev">
+  <div class="bpsg-rev-inner">
+    <div class="bpsg-rev-label">
+      Opiniones reales
+    </div>
+    <h2>
+      Personas que ya dejaron de sentirse <span>inflamadas</span>
+    </h2>
+    <p class="bpsg-rev-sub">
+      Miles de personas empezaron a cambiar cómo se sienten después de comer gracias a estas recetas simples, ricas y fáciles de sostener.
+    </p>
+    <div class="bpsg-rev-rating">
+      <div class="bpsg-rev-stars">★★★★★</div>
+      <div class="bpsg-rev-score">
+        4,9/5 · Más de 3.000 descargas
+      </div>
+    </div>
+    <div class="bpsg-rev-grid">
+      <div class="bpsg-rev-card">
+        <img class="bpsg-rev-photo" src="assets/5bef4d7e-WhatsApp_Image_2026-08-01_at_16.27.49_1.jpg" alt="Plato terminado por María L.">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">ML</div>
+          <div>
+            <div class="bpsg-rev-name">María L.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Hace años terminaba inflamada después de cenar. En 4 días ya me sentía muchísimo más liviana 😭”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Eso mismo nos cuentan muchísimas clientas ❤️</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <img class="bpsg-rev-photo" src="assets/520c9fbf-WhatsApp_Image_2026-08-01_at_16.27.49_2.jpg" alt="Plato terminado por Gabriela S.">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">GS</div>
+          <div>
+            <div class="bpsg-rev-name">Gabriela S.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Pensé que iba a ser comida aburrida pero las recetas son MUY ricas. Mi marido ahora me pide los postres 😂”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Y sin azúcar refinada 🙌</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <img class="bpsg-rev-photo" src="assets/398609e7-WhatsApp_Image_2026-08-01_at_16.27.49.jpg" alt="Plato terminado por Carla R.">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">CR</div>
+          <div>
+            <div class="bpsg-rev-name">Carla R.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Lo mejor es dejar de pensar todos los días qué cocinar. Me sacó un estrés enorme.”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>La organización cambia todo ❤️</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">VP</div>
+          <div>
+            <div class="bpsg-rev-name">Valentina P.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Tengo colon irritable y muchas comidas me caían mal. Estas recetas me ayudaron muchísimo.”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Gracias por confiar en nosotros 🙌</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">DM</div>
+          <div>
+            <div class="bpsg-rev-name">Daniela M.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Los postres saludables me salvaron porque era MUY adicta al azúcar 😭”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Los favoritos de la comunidad 🍫</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">LF</div>
+          <div>
+            <div class="bpsg-rev-name">Lucía F.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “No sabía qué comer porque TODO me caía pesado. Ahora tengo recetas que sé que me hacen bien.”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Te entendemos perfectamente ❤️</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">AR</div>
+          <div>
+            <div class="bpsg-rev-name">Andrea R.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Hay recetas que hago literal en 15 minutos. Me solucionó las cenas.”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Simple, rápido y rico 🙌</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">NM</div>
+          <div>
+            <div class="bpsg-rev-name">Natalia M.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Mi familia pensó que iba a ser ‘comida sana aburrida’ y terminaron todos fascinados 😂”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Nos pasa muchísimo 😭</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">PC</div>
+          <div>
+            <div class="bpsg-rev-name">Paula C.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Bajé 3 kilos sin sentir que estaba haciendo dieta. Eso nunca me había pasado.”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Así debería sentirse comer bien ❤️</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">SM</div>
+          <div>
+            <div class="bpsg-rev-name">Sofía M.</div>
+            <div class="bpsg-rev-verified">★★★★☆ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Algunas harinas tuve que buscarlas en dietética pero igual las recetas son fáciles.”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Y siempre podés reemplazar ingredientes 🙌</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">CF</div>
+          <div>
+            <div class="bpsg-rev-name">Carolina F.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “Lo compré pensando que iba a usar 4 o 5 recetas y terminé usando el recetario TODOS los días.”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Ese era el objetivo ❤️</p>
+        </div>
+      </div>
+      <div class="bpsg-rev-card">
+        <div class="bpsg-rev-top">
+          <div class="bpsg-rev-avatar">AL</div>
+          <div>
+            <div class="bpsg-rev-name">Andrea L.</div>
+            <div class="bpsg-rev-verified">★★★★★ · Compra verificada</div>
+          </div>
+        </div>
+        <div class="bpsg-rev-text">
+          “La sensación de desinflamarme después de comer no tiene precio. Me cambió muchísimo.”
+        </div>
+        <div class="bpsg-rev-reply">
+          <strong>Alivio en Cada Plato</strong>
+          <p>Gracias por compartirlo ❤️</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--27150248575255__custom_liquid_w6tKQx" class="shopify-section section"><style data-shopify>.section-template--27150248575255__custom_liquid_w6tKQx-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--27150248575255__custom_liquid_w6tKQx-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }</style><div class="color-scheme-1 gradient">
+  <div class="section-template--27150248575255__custom_liquid_w6tKQx-padding">
+    <style>
+  .bpsg-faq {
+    background: #F5EDD8;
+    padding: 64px 24px;
+  }
+
+  .bpsg-faq-inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .bpsg-faq-label {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #C8813A;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .bpsg-faq h2 {
+    font-size: clamp(26px, 4vw, 40px);
+    font-family: Georgia, serif;
+    color: #2C1A0E;
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+
+  .bpsg-faq h2 span {
+    color: #C8813A;
+  }
+
+  .bpsg-faq-item {
+    border-bottom: 1px solid #E8D5B0;
+  }
+
+  .bpsg-faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 0;
+    text-align: left;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #2C1A0E;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .bpsg-faq-q:hover {
+    color: #C8813A;
+  }
+
+  .bpsg-faq-icon {
+    font-size: 22px;
+    color: #C8813A;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+    display: inline-block;
+    font-style: normal;
+  }
+
+  .bpsg-faq-a {
+    display: none;
+    font-size: 15px;
+    color: #7A6248;
+    font-family: sans-serif;
+    line-height: 1.7;
+    padding-bottom: 20px;
+  }
+
+  .bpsg-faq-item.open .bpsg-faq-a {
+    display: block;
+  }
+
+  .bpsg-faq-item.open .bpsg-faq-icon {
+    transform: rotate(45deg);
+  }
+
+  /* CIERRE */
+
+  .bpsg-cierre {
+    background: #2C1A0E;
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .bpsg-cierre-inner {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .bpsg-cierre h2 {
+    font-size: clamp(30px, 4vw, 46px);
+    font-family: Georgia, serif;
+    color: #F5EDD8;
+    margin-bottom: 18px;
+    line-height: 1.2;
+  }
+
+  .bpsg-cierre h2 span {
+    color: #C8813A;
+  }
+
+  .bpsg-cierre p {
+    font-size: 17px;
+    color: #D2C2A8;
+    line-height: 1.7;
+    font-family: sans-serif;
+    margin-bottom: 34px;
+  }
+
+  .bpsg-cierre-btn {
+    display: inline-block;
+    background: #C8813A;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: 22px 52px;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all .2s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  }
+
+  .bpsg-cierre-btn:hover {
+    background: #A8681E;
+    transform: translateY(-2px);
+  }
+
+  .bpsg-cierre-guarantee {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #BCA98E;
+    font-family: sans-serif;
+  }
+
+  .bpsg-cierre-stock {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #C4B49A;
+    font-family: sans-serif;
+  }
+
+  @media(max-width:768px){
+
+    .bpsg-cierre{
+      padding:64px 20px;
+    }
+
+    .bpsg-cierre-btn{
+      width:100%;
+      max-width:100%;
+      padding:20px 24px;
+      font-size:18px;
+    }
+
+  }
+</style>
+
+<!-- FAQ -->
+<div class="bpsg-faq">
+
+  <div class="bpsg-faq-inner">
+
+    <div class="bpsg-faq-label">
+      Preguntas frecuentes
+    </div>
+
+    <h2>
+      ¿Tenés <span>dudas</span>?
+    </h2>
+
+    <div class="bpsg-faq-item">
+      <button class="bpsg-faq-q">
+        ¿Necesito saber cocinar para usar esta guía?
+        <span class="bpsg-faq-icon">+</span>
+      </button>
+
+      <div class="bpsg-faq-a">
+        No, para nada. Las recetas están explicadas paso a paso y pensadas para personas normales que quieren comer mejor sin complicarse.
+      </div>
+    </div>
+
+    <div class="bpsg-faq-item">
+      <button class="bpsg-faq-q">
+        ¿Los ingredientes son fáciles de conseguir?
+        <span class="bpsg-faq-icon">+</span>
+      </button>
+
+      <div class="bpsg-faq-a">
+        Sí. Todas las recetas usan ingredientes comunes y además incluimos variantes y reemplazos para que puedas adaptarlas fácilmente.
+      </div>
+    </div>
+
+    <div class="bpsg-faq-item">
+      <button class="bpsg-faq-q">
+        ¿Cuándo recibo el acceso?
+        <span class="bpsg-faq-icon">+</span>
+      </button>
+
+      <div class="bpsg-faq-a">
+        Inmediatamente después del pago. Recibís todo por email y podés verlo desde tu celular, tablet o computadora.
+      </div>
+    </div>
+
+    <div class="bpsg-faq-item">
+      <button class="bpsg-faq-q">
+        ¿Las recetas son sin gluten y sin azúcar?
+        <span class="bpsg-faq-icon">+</span>
+      </button>
+
+      <div class="bpsg-faq-a">
+        Sí. Todo el contenido está pensado para ayudar a desinflamarte evitando harinas refinadas y azúcar agregada.
+      </div>
+    </div>
+
+    <div class="bpsg-faq-item">
+      <button class="bpsg-faq-q">
+        ¿En cuánto tiempo puedo notar cambios?
+        <span class="bpsg-faq-icon">+</span>
+      </button>
+
+      <div class="bpsg-faq-a">
+        Muchas personas sienten menos hinchazón y más liviandad durante los primeros días. Cada cuerpo es distinto, pero mejorar lo que comés suele generar cambios rápidos.
+      </div>
+    </div>
+
+    <div class="bpsg-faq-item">
+      <button class="bpsg-faq-q">
+        ¿Tiene garantía?
+        <span class="bpsg-faq-icon">+</span>
+      </button>
+
+      <div class="bpsg-faq-a">
+        Sí. Tenés 30 días de garantía total. Si sentís que no era para vos, te devolvemos el dinero.
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- CIERRE -->
+<div class="bpsg-cierre">
+
+  <div class="bpsg-cierre-inner">
+
+    <h2>
+      Empezá hoy a sentirte <span>más liviana</span><br>
+      después de cada comida
+    </h2>
+
+    <p>
+      Más de 500 recetas sin gluten y sin azúcar para dejar de inflamarte y volver a disfrutar la comida.
+    </p>
+
+    <a 
+      href="https://pay.hotmart.com/C96666094Q?checkoutMode=2&amp;off=8s7i881n" 
+      class="bpsg-cierre-btn"
+    >
+      Quiero desinflamarme →
+    </a>
+
+    <p class="bpsg-cierre-guarantee">
+      🔒 Pago seguro · Acceso inmediato · Garantía 30 días
+    </p>
+
+    <p class="bpsg-cierre-stock">
+      ⚠️ Oferta disponible por tiempo limitado
+    </p>
+
+  </div>
+
+</div>
+
+
+  </div>
+</div>
+
+
+</section>
+    </main>
 </body>
 </html>

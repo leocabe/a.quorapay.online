@@ -1,0 +1,50 @@
+<!doctype html><meta charset="utf-8"><title>Currency checks</title><pre id="results">Running…</pre>
+<script>
+(async () => {
+ const source = await (await fetch('../index.html')).text();
+ const code = await (await fetch('../assets/currency.js')).text();
+ const results = [];
+ for (const scenario of [
+   {currency:'BRL',country:'BR',expected:75},
+   {currency:'AOA',country:'AO',expected:13500},
+   {currency:'JPY',country:'JP',expected:2250},
+   {currency:'EUR',country:'PT',expected:13.5},
+   {currency:'AOA',country:'AO',countryOnly:true,expected:13500},
+   {currency:'BRL',country:'BR',ipapiOnly:true,expected:75},
+   {currency:'BRL',country:'BR',failure:true,expected:15},
+   {currency:'XXX',country:'XX',expected:15}
+ ]) {
+  const frame=document.createElement('iframe');frame.style.width='390px';document.body.append(frame);
+  const mock=`
+    document.documentElement.classList.add('prices-pending');
+    Object.defineProperty(window,'localStorage',{value:{getItem:()=>null,setItem:()=>{}}});
+    Object.defineProperty(window,'sessionStorage',{value:{getItem:()=>null,setItem:()=>{}}});
+    setTimeout(()=>{window.pendingWasHidden=document.documentElement.classList.contains('prices-pending')&&getComputedStyle(document.querySelector('[data-usd]')).visibility==='hidden'},30);
+    window.fetch=async url=>{
+      const geo=!url.includes('/currencies/usd.json');
+      if(geo)await new Promise(resolve=>setTimeout(resolve,150));
+      if(${!!scenario.failure} || (${!!scenario.countryOnly}&&url.includes('ipapi')) || (${!!scenario.ipapiOnly}&&url.includes('country.is')))throw Error('Offline');
+      return {ok:true,json:async()=>url.includes('ipapi')?{currency:'${scenario.currency}'}:url.includes('country.is')?{country:'${scenario.country}'}:{date:new Date().toISOString().slice(0,10),usd:{usd:1,brl:5,aoa:900,jpy:150,eur:0.9}}}
+    };`;
+  frame.srcdoc=source.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,'').replace('<head>','<head><base href="'+new URL('../',location.href)+'">').replace('</body>','<script>'+mock+code+'<\/script></body>');
+  await new Promise(resolve=>frame.onload=resolve);
+  await new Promise(resolve=>setTimeout(resolve,220));
+  const d=frame.contentDocument;
+  if(!frame.contentWindow.pendingWasHidden)throw Error('USD visible before detection');
+  if(d.documentElement.classList.contains('prices-pending'))throw Error('Prices never revealed');
+  const currency=(scenario.failure||scenario.currency==='XXX')?'USD':scenario.currency;
+  const format=new Intl.NumberFormat(navigator.language,{style:'currency',currency,currencyDisplay:'code'});
+  const price=d.querySelector('.price-item--sale [data-usd]').textContent;
+  if(price!==format.format(scenario.expected))throw Error('Wrong price '+scenario.currency+': '+price);
+  if(d.documentElement.dataset.displayCurrency!==currency)throw Error('Wrong currency');
+  if(d.querySelector('.currency-panel,#currency-status,.currency-source'))throw Error('Removed currency note still present');
+  if(d.querySelector('#display-currency'))throw Error('Currency selector still present');
+  for(const a of d.querySelectorAll('.product-form__submit,.bonos-cta,.bpsg-cierre-btn')) {
+    if(a.href!=='https://pay.hotmart.com/C96666094Q?checkoutMode=2&off=8s7i881n'||a.hasAttribute('onclick'))throw Error('Invalid checkout link');
+  }
+  results.push({scenario,price,passed:true});frame.remove();
+ }
+ document.querySelector('#results').textContent=JSON.stringify(results,null,2);
+ document.title='PASS — currency checks';
+})().catch(error=>{document.title='FAIL';document.querySelector('#results').textContent=error.stack});
+</script>

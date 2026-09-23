@@ -1,0 +1,25 @@
+/* Standalone adaptations; original section styles live alongside their markup. */
+html { scroll-behavior: smooth; }
+body { display: block; }
+#agregar-al-carrito { scroll-margin-top: 32px; }
+.scroll-trigger { opacity: 1 !important; transform: none !important; }
+.product__media-toggle, .product__media-icon { display: none; }
+product-info, media-gallery, slider-component, product-form { display: block; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+.product-form__buttons .hotmart__button-checkout {
+  display: inline-flex !important; align-items: center; justify-content: center;
+  width: 100%; min-height: 47px; padding: 12px 24px !important;
+  border: 0 !important; border-radius: var(--buttons-radius-outset) !important;
+  background: rgb(var(--color-button)) !important; color: rgb(var(--color-button-text)) !important;
+  font-family: var(--font-body-family) !important; font-size: 1.5rem !important;
+  font-weight: var(--font-body-weight) !important; text-decoration: none !important;
+  text-shadow: none !important; box-shadow: none !important;
+}
+
+/* Reveal monetary amounts together after country detection and rates finish. */
+.prices-pending [data-usd] { visibility: hidden; position: relative; }
+.prices-pending [data-usd]::after { content: '…'; visibility: visible; position: absolute; left: 0; top: 0; color: #7a6248; }
