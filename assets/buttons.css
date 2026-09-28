@@ -1,0 +1,19 @@
+/* Shared green palette for buttons on both sales pages. */
+:root { --action-green: #184726; --action-green-hover: #24613a; }
+body :is(button, .button, .hotmart__button-checkout, .bonos-cta, .bpsg-cierre-btn, .cta, [role="button"]) {
+  --color-button: 24, 71, 38;
+  --color-button-text: 255, 255, 255;
+  background: var(--action-green) !important;
+  color: #fff !important;
+  border-color: var(--action-green) !important;
+}
+body :is(button, .button, .hotmart__button-checkout, .bonos-cta, .bpsg-cierre-btn, .cta, [role="button"]):hover {
+  background: var(--action-green-hover) !important;
+  border-color: var(--action-green-hover) !important;
+}
+body :is(button, .button, .hotmart__button-checkout, .bonos-cta, .bpsg-cierre-btn, .cta, [role="button"]):focus-visible {
+  outline: 3px solid var(--action-green) !important;
+  outline-offset: 4px;
+}
+body .bpsg-faq-q { padding-inline: 16px; }
+body .bpsg-faq-icon { color: #fff; }
