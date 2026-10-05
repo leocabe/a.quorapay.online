@@ -1,0 +1,64 @@
+'use strict';
+// O envio escolhido na página 2 determina o destino do pagamento.
+const PAYMENT_URLS = Object.freeze({
+  '197 ZAR': 'https://pay.trywalled.com/afee527d-ca88-4c73-912a-d899f104c49b',
+  '300 ZAR': 'https://pay.trywalled.com/332b282c-858b-4005-a5ae-7c34c08d3b9a',
+  '497 ZAR': 'https://pay.trywalled.com/70d1651a-9b16-40e5-b949-54ab5456ff6f'
+});
+// Transmite ao checkout os parâmetros de campanha suportados pela Walled.
+function withCampaignParams(destination) {
+  const keys = ['src', 'sck', 'utm_id', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_source_platform', 'utm_term', 'utm_content', 'utm_creative_format', 'utm_marketing_tactic', 'gclid', 'gbraid', 'wbraid', 'fbclid', 'ttclid', 'msclkid'];
+  const source = new URLSearchParams(window.location.search);
+  const url = new URL(destination);
+  keys.forEach(key => {
+    const value = source.get(key);
+    if (value) url.searchParams.set(key, value);
+  });
+  return url.toString();
+}
+let order = null;
+try { order = JSON.parse(sessionStorage.getItem('novaCardOrder') || 'null'); } catch (_) {}
+// No cartão só cabem o primeiro e o último nome.
+function cardDisplayName(full) {
+ const parts=String(full||'').trim().split(/\s+/).filter(Boolean);
+ return parts.length>2?parts[0]+' '+parts[parts.length-1]:parts.join(' ');
+}
+const setText = (id, value) => { if (typeof value === 'string' && value.trim()) document.getElementById(id).textContent = value; };
+if (order && typeof order === 'object') {
+  setText('holder-name', order.name);
+  setText('card-name', typeof order.name === 'string' ? cardDisplayName(order.name).toLocaleUpperCase('en-ZA') : '');
+  setText('address', order.address);
+  setText('delivery-date', order.deliveryDate);
+  setText('shipping-name', order.shipping);
+  setText('shipping-days', order.shippingDays);
+  setText('shipping-price', order.shippingPrice);
+  setText('button-price', order.shippingPrice);
+  setText('credit', order.credit);
+}
+// Reduz o tamanho do nome até caber na largura reservada no cartão, sem reticências.
+function fitCardName(el) {
+ const fit=()=>{
+  el.style.fontSize='';el.style.letterSpacing='';
+  const base=parseFloat(getComputedStyle(el).fontSize);let size=base;
+  while(el.scrollWidth>el.clientWidth&&size>6){size-=0.5;el.style.fontSize=size+'px';if(size<base*0.85)el.style.letterSpacing='1px';if(size<base*0.65)el.style.letterSpacing='0px';}
+ };
+ fit();if(document.fonts)document.fonts.ready.then(fit);
+ if(window.ResizeObserver)new ResizeObserver(fit).observe(el.parentElement);
+}
+fitCardName(document.getElementById('card-name'));
+const paymentUrl = PAYMENT_URLS[order?.shippingPrice || '300 ZAR'];
+const dialog = document.getElementById('info-dialog');
+function showInfo(title, message) {
+  document.getElementById('dialog-title').textContent = title;
+  document.getElementById('dialog-message').textContent = message;
+  dialog.showModal();
+}
+document.getElementById('pay-button').addEventListener('click', () => {
+  if (paymentUrl) window.location.assign(withCampaignParams(paymentUrl));
+  else showInfo('Payment', 'Payment has not been set up yet. You have not been charged.');
+});
+document.querySelectorAll('[data-legal]').forEach(button => button.addEventListener('click', () => {
+  const url = LEGAL_URLS[button.dataset.legal];
+  if (url) window.location.assign(url);
+  else showInfo(button.textContent, 'This document is not available yet.');
+}));

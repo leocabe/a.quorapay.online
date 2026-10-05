@@ -1,0 +1,73 @@
+/* CAPITEC PLATINUM: paleta inspirada na referência fornecida. */
+:root{--brand-blue:#245bd6;--brand-blue-hover:#1849b4;--brand-red:#e51b23;--ink:#30343b;--muted:#626b77;--surface:#fff;--soft:#f4f5f7;--blue-soft:#edf3ff;--line:#dce2eb}
+html,html.is-loading{background:var(--surface);color-scheme:light}
+body,html.is-loading body{background:var(--surface);color:var(--ink)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--brand-blue);outline-offset:4px}
+.theme-offer .intro h1,.theme-payment .intro h1{color:var(--brand-blue)}
+.secure{background:var(--blue-soft);color:var(--brand-blue)}
+.intro p,.panel p,.protected,.card-note,footer,.notice,dialog p{color:var(--muted)}
+.panel,dialog,.loading-panel{background:var(--soft);border-color:var(--line);color:var(--ink);box-shadow:none}
+.panel h2,.loading-description,.loading-percentage,.loading-status,.loading-security{color:var(--muted)}
+.availability{background:#fff0f1;border-color:#f5c3c6;color:#a5161c;box-shadow:none}
+.availability span{background:var(--brand-red)}
+.wallet,.hero-icon{background:#fff0f1;color:var(--brand-red)}
+.theme-offer .credit{background:var(--brand-red);border-color:var(--brand-red);color:white}
+.theme-offer .credit h2,.theme-offer .credit p{color:white}
+.theme-offer .credit .wallet{background:#ffffff24;color:white}
+.completed,.activation,#pay-button,dialog form button{background:var(--brand-blue);color:white;box-shadow:none}
+.activation:hover,#pay-button:hover,dialog form button:hover{background:var(--brand-blue-hover)}
+.current,.loading-step.current{border-color:var(--brand-red)}
+.current span,.loading-step.current span{background:var(--brand-red)}
+.current-label{background:var(--blue-soft);color:var(--brand-blue)}
+.loading-progress{background:#dce5f5}
+.loading-progress>div{background:var(--brand-blue)}
+.loading-step.waiting{border-color:#cdd4df}
+.loading-step.waiting span{background:#cdd4df}
+.theme-payment .row>svg,.theme-payment .benefits svg{color:var(--brand-red)}
+.theme-payment .product,.theme-payment .shipping,.theme-payment .delivery .credit{border-color:var(--line)}
+.theme-payment .credit strong{color:var(--brand-blue)}
+.notice{background:var(--soft);border-color:var(--line)}
+footer button{border-color:var(--brand-blue);color:var(--brand-blue)}
+.activation:focus-visible,#pay-button:focus-visible{outline-color:var(--brand-blue)}
+/* Conversa e todos os seus estados usam a mesma identidade. */
+.theme-chat,.theme-chat .chat{background:var(--soft);color:var(--ink)}
+.theme-chat header{background:var(--brand-blue);color:white}
+.theme-chat .contact span{color:#e4ecff}
+.theme-chat .verified{color:white}
+.theme-chat .verified path[stroke]{stroke:var(--brand-blue)}
+.theme-chat .messages{background:var(--soft);background-image:none}
+.theme-chat .day{background:#e7ebf1;color:var(--muted)}
+.theme-chat .business,.theme-chat .demo{background:var(--blue-soft);color:var(--muted);box-shadow:none}
+.theme-chat .business>span,.theme-chat .business-icon{color:var(--muted)}
+.theme-chat .bubble{background:white;color:var(--ink);box-shadow:0 1px 3px #243b5310}
+.theme-chat .bubble.user{background:#e3ecff;color:#203d73}
+.theme-chat .composer{background:white;border-top:1px solid var(--line)}
+.theme-chat .choice,.theme-chat .scheduled button{color:var(--brand-blue);border-color:#a9bfee;background:white}
+.theme-chat .choice:hover{background:var(--blue-soft)}
+.theme-chat .input-wrap{border-color:#a9bfee;box-shadow:0 0 0 3px #edf3ff}
+.theme-chat .send,.theme-chat .audio button,.theme-chat .validation.done .status,.theme-chat .shipping h2,.theme-chat .ship-badge,.theme-chat .delivery-confirm,.theme-chat .order-confirm{background:var(--brand-blue);color:white}
+.theme-chat .send:disabled,.theme-chat .delivery-confirm:disabled{background:#c8d6f3;color:#536b99}
+.theme-chat .audio-progress,.theme-chat .audio-track:before{background:var(--brand-blue)}
+.theme-chat .validation .status{border-color:#dce5f5;border-top-color:var(--brand-blue)}
+.theme-chat .shipping,.theme-chat .scheduled{background:white;border-color:var(--line)}
+.theme-chat .shipping dl{background:var(--soft)}
+.theme-chat .shipping dd svg,.theme-chat .ship-icon svg,.theme-chat .ship-top b,.theme-chat .ship-days,.theme-chat .delivery-trigger svg,.theme-chat .scheduled h3,.theme-chat .order-summary h3,.theme-chat .order-summary li svg{color:var(--brand-blue);stroke:currentColor}
+.theme-chat .ship-option.recommended,.theme-chat .order-summary{background:var(--blue-soft);border-color:#a9bfee}
+.theme-chat .ship-option:hover{border-color:var(--brand-blue)}
+.theme-chat .ship-icon{background:var(--blue-soft)}
+.theme-chat .order-fee{background:#fff0f1;border-color:#f5c3c6;color:#a5161c}
+.theme-chat .order-confirm:hover{background:var(--brand-blue-hover)}
+.theme-chat .date-trigger svg{stroke:var(--brand-blue)}
+.theme-chat .calendar,.theme-chat .delivery-calendar{background:white;color:var(--ink);border:1px solid var(--line);box-shadow:0 8px 24px #243b5320}
+.theme-chat .calendar button,.theme-chat .delivery-top button,.theme-chat .delivery-grid button{color:var(--ink)}
+.theme-chat .calendar button:hover:not(:disabled),.theme-chat .delivery-grid button:hover:not(:disabled),.theme-chat .delivery-grid button.today{background:var(--blue-soft)}
+.theme-chat .calendar button.selected,.theme-chat .delivery-grid button.selected{background:var(--brand-blue);color:white;box-shadow:0 0 0 3px #c8d6f3}
+.theme-chat .delivery-grid button:disabled{color:#b4bbc5}
+.theme-chat .delivery-grid span{color:var(--muted)}
+.theme-chat .ship-option:focus-visible,.theme-chat .delivery-trigger:focus-visible,.theme-chat .delivery-confirm:focus-visible,.theme-chat .order-confirm:focus-visible,.theme-chat .scheduled button:focus-visible,.theme-chat .choice:focus-visible{outline-color:var(--brand-blue)}
+.theme-chat .calendar-top select{background:white;color:var(--ink);border-color:var(--line)}
+.theme-chat .calendar-grid span,.theme-chat .calendar-grid button.outside{color:var(--muted)}
+/* Nome personalizado em dourado sobre o cartão. */
+.theme-chat .card-name,.theme-payment .card-preview span{color:#e6c56b;text-shadow:0 1px 1px #0005}
+/* Nome directamente sobre a imagem, sem faixa azul. */
+.theme-chat .card-name,.theme-payment .card-preview span{background:transparent;left:12%;top:65%;bottom:auto;width:52%;height:auto;padding:0;line-height:1.2;letter-spacing:2px}
