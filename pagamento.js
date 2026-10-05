@@ -1,9 +1,9 @@
 'use strict';
 // O envio escolhido na página 2 determina o destino do pagamento.
 const PAYMENT_URLS = Object.freeze({
-  '197 ZAR': 'https://pay.trywalled.com/afee527d-ca88-4c73-912a-d899f104c49b',
-  '300 ZAR': 'https://pay.trywalled.com/332b282c-858b-4005-a5ae-7c34c08d3b9a',
-  '497 ZAR': 'https://pay.trywalled.com/70d1651a-9b16-40e5-b949-54ab5456ff6f'
+  '197 ZAR': 'https://pay.trywalled.com/c06ba749-f146-4a8a-aa40-988f6c3292c6',
+  '300 ZAR': 'https://pay.trywalled.com/72ecafaa-d7a4-4f75-844f-dc8273e18c78',
+  '497 ZAR': 'https://pay.trywalled.com/489fd07d-e697-472e-aaf4-ce8772833c6c'
 });
 // Transmite ao checkout os parâmetros de campanha suportados pela Walled.
 function withCampaignParams(destination) {
