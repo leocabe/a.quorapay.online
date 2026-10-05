@@ -71,3 +71,7 @@ footer button{border-color:var(--brand-blue);color:var(--brand-blue)}
 .theme-chat .card-name,.theme-payment .card-preview span{color:#e6c56b;text-shadow:0 1px 1px #0005}
 /* Nome directamente sobre a imagem, sem faixa azul. */
 .theme-chat .card-name,.theme-payment .card-preview span{background:transparent;left:12%;top:65%;bottom:auto;width:52%;height:auto;padding:0;line-height:1.2;letter-spacing:2px}
+
+.theme-chat .card-name{white-space:nowrap;text-overflow:clip}
+
+.theme-payment .benefits li{color:var(--ink);font-weight:600}
