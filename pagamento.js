@@ -53,10 +53,16 @@ function showInfo(title, message) {
   document.getElementById('dialog-message').textContent = message;
   dialog.showModal();
 }
-document.getElementById('pay-button').addEventListener('click', () => {
-  if (paymentUrl) window.location.assign(withCampaignParams(paymentUrl));
-  else showInfo('Payment', 'Payment has not been set up yet. You have not been charged.');
-});
+// O link nativo permite à UTMify reconhecer o checkout e aguardar o envio do IC.
+const payButton = document.getElementById('pay-button');
+if (paymentUrl) {
+  payButton.href = withCampaignParams(paymentUrl);
+} else {
+  payButton.removeAttribute('href');
+  payButton.addEventListener('click', () => {
+    showInfo('Payment', 'Payment has not been set up yet. You have not been charged.');
+  });
+}
 document.querySelectorAll('[data-legal]').forEach(button => button.addEventListener('click', () => {
   const url = LEGAL_URLS[button.dataset.legal];
   if (url) window.location.assign(url);
