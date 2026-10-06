@@ -1,10 +1,6 @@
 'use strict';
-// O envio escolhido na página 2 determina o destino do pagamento.
-const PAYMENT_URLS = Object.freeze({
-  '197 ZAR': 'https://pay.trywalled.com/c06ba749-f146-4a8a-aa40-988f6c3292c6',
-  '300 ZAR': 'https://pay.trywalled.com/72ecafaa-d7a4-4f75-844f-dc8273e18c78',
-  '497 ZAR': 'https://pay.trywalled.com/489fd07d-e697-472e-aaf4-ce8772833c6c'
-});
+// Único checkout disponível durante o teste de ticket.
+const PAYMENT_URL = 'https://pay.trywalled.com/c06ba749-f146-4a8a-aa40-988f6c3292c6';
 // Transmite ao checkout os parâmetros de campanha suportados pela Walled.
 function withCampaignParams(destination) {
   const keys = ['src', 'sck', 'utm_id', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_source_platform', 'utm_term', 'utm_content', 'utm_creative_format', 'utm_marketing_tactic', 'gclid', 'gbraid', 'wbraid', 'fbclid', 'ttclid', 'msclkid'];
@@ -28,11 +24,7 @@ if (order && typeof order === 'object') {
   setText('holder-name', order.name);
   setText('card-name', typeof order.name === 'string' ? cardDisplayName(order.name).toLocaleUpperCase('en-ZA') : '');
   setText('address', order.address);
-  setText('delivery-date', order.deliveryDate);
-  setText('shipping-name', order.shipping);
-  setText('shipping-days', order.shippingDays);
-  setText('shipping-price', order.shippingPrice);
-  setText('button-price', order.shippingPrice);
+  if (order.shippingPrice === '197 ZAR') setText('delivery-date', order.deliveryDate);
   setText('credit', order.credit);
 }
 // Reduz o tamanho do nome até caber na largura reservada no cartão, sem reticências.
@@ -46,7 +38,7 @@ function fitCardName(el) {
  if(window.ResizeObserver)new ResizeObserver(fit).observe(el.parentElement);
 }
 fitCardName(document.getElementById('card-name'));
-const paymentUrl = PAYMENT_URLS[order?.shippingPrice || '300 ZAR'];
+const paymentUrl = PAYMENT_URL;
 const dialog = document.getElementById('info-dialog');
 function showInfo(title, message) {
   document.getElementById('dialog-title').textContent = title;
